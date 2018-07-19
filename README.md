@@ -21,4 +21,4 @@
 
 <sub>© All designs and code from scratch by me (unless otherwise noted & not subject to libraries)</sub>
 
-<sup>™ All brand names & logos are subject and reserved to the brand's rights. Not partnered - only for personal use</sup>
+<sup>™ All brand names & logos are reserved to the brand's rights. Not partnered or endorsed - only for personal use</sup>
