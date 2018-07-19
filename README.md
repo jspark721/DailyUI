@@ -1,5 +1,6 @@
 # DailyUI
 100 days of UI challenges #dailyUI | From design to code!
+***
 
 - #001 Sign Up Form
 - #002 Credit Card Checkout
@@ -18,6 +19,6 @@
 - #015 Switch Button
 - #016 Pop-up/Overlay
 
-
-##### All designs and code from scratch by me (unless otherwise noted & not subject to libraries) ©
-###### All brand names & logos are subject and reserved to the brand's rights. Not partnered or endorsed by them - all for personal use only ™
+***
+<small>© All designs and code from scratch by me (unless otherwise noted & not subject to libraries)</small>
+<small>™ All brand names & logos are subject and reserved to the brand's rights. Not partnered - only for personal use</small>
