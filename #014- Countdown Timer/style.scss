@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
+
+$font: 'Lato', sans-serif;
+$big: 'Montserrat', sans-serif;
+
+$red: #EF2F3C;
+$white: #F6F4F3;
+$blue: #276FBF;
+$dark: #183059;
+$yellow: #F0A202;
+
+
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  background: $dark;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 650px;
+  height: 180px;
+}
+
+h1 {
+  font-family: $font;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: $white;
+}
+
+#timer {
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font;
+  font-size: .7em;
+  letter-spacing: 5px;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.days {
+  background: $red;
+}
+
+.hours {
+  background: $white;
+  color: $dark;
+}
+
+.minutes {
+  background: $blue;
+}
+
+.seconds {
+  background: $yellow;
+  .numbers {
+
+  }
+}
+
+.numbers {
+  font-family: $big;
+  color: $dark;
+  font-size: 5em;
+}
+
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: $font;
+  font-size: 0.7em;
+  p {
+    letter-spacing: 3px;
+    color: $red;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: $blue;
+    }
+  }
+}

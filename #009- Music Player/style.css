@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+html {
+  min-height: 100%;
+  display: grid;
+}
+
+body {
+  background: linear-gradient(217deg, rgba(242, 157, 171, 0.9), rgba(242, 157, 171, 0) 50%), linear-gradient(107deg, rgba(221, 137, 158, 0.9), rgba(221, 137, 158, 0) 70%), linear-gradient(246deg, rgba(242, 157, 171, 0.9), rgba(242, 157, 171, 0) 60%);
+  display: grid;
+}
+
+#player {
+  background: #FFFFFF;
+  position: relative;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(88, 90, 91, 0.4);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+#player:hover {
+  transform: scale(1.05);
+}
+
+.album {
+  background: url("https://upload.wikimedia.org/wikipedia/en/6/67/Roses_%28featuring_ROZES%29_%28Official_Single_Cover%29_by_The_Chainsmokers.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.heart {
+  position: absolute;
+  right: 0;
+  color: #CDD3D5;
+  margin: 10px;
+  transition: all .4s ease;
+}
+
+.clicked {
+  color: #DD899E;
+  transform: scale(1.2);
+  transition: all .4s ease;
+}
+
+.info {
+  height: 115px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(35px);
+  transition: all .5s ease-in-out;
+}
+
+.up {
+  transform: translateY(0px);
+}
+
+.progress-bar {
+  height: 5px;
+  width: 73%;
+  margin: 6% auto;
+  background: #dbdfe1;
+  border-radius: 10px;
+  font-family: "Questrial", sans-serif;
+}
+
+.fill {
+  background-color: #DD899E;
+  width: 35%;
+  height: 0.3rem;
+  border-radius: 2px;
+}
+
+.time--current, .time--total {
+  color: #585A5B;
+  font-size: 10px;
+  position: absolute;
+  margin-top: -2px;
+}
+
+.time--current {
+  left: 15px;
+}
+
+.time--total {
+  right: 15px;
+}
+
+.currently-playing {
+  text-align: center;
+  margin-top: -3px;
+}
+
+.song-name, .artist-name {
+  font-family: "Questrial", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.song-name {
+  font-size: .8em;
+  letter-spacing: 3px;
+  color: #585A5B;
+}
+
+.artist-name {
+  font-size: .6em;
+  letter-spacing: 1.5px;
+  color: #e8b1bf;
+  margin-top: 5px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  font-size: .8em;
+  justify-content: center;
+  color: #CDD3D5;
+}
+.controls .play {
+  margin: 15px 25px;
+  color: #b1bbbe;
+}
+.controls .option {
+  left: 10px;
+  position: absolute;
+  font-size: .8em;
+}
+.controls .add {
+  right: 10px;
+  position: absolute;
+  font-size: .8em;
+}
+.controls .volume {
+  margin-right: 30px;
+  font-size: .8em;
+}
+.controls .shuffle {
+  margin-left: 30px;
+  font-size: .8em;
+}
+
+.play, .next, .previous, .option, .add, .volume, .shuffle {
+  transition: all .5s ease;
+}
+.play:hover, .next:hover, .previous:hover, .option:hover, .add:hover, .volume:hover, .shuffle:hover {
+  color: #DD899E;
+}

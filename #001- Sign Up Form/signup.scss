@@ -1,0 +1,219 @@
+$gray: #8E9AAF;
+$lavender: #CBC0D3;
+$pale: #EAC7CC;
+$white: #f6f6f6;
+
+$pink: darken($pale, 15%);
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lora');
+
+$sans-serif: 'Open Sans', sans-serif;
+$serif: 'Lora', serif;
+
+body {
+  background: $lavender;
+}
+
+/* div box styling */
+.container {
+  margin: auto;
+  top: 10%;
+  width: 700px;
+  height: 550px;
+}
+
+.welcome {
+  background: $white;
+  width: 430px;
+  height: 250px;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+
+.pinkbox {
+  position: absolute;
+  top: -10%;
+  left: 4%;
+  background: $pale;
+  width: 220px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 2px 0 10px rgba(0,0,0,.1);
+  transition: all .5s ease-in-out;
+  z-index: 2;
+}
+
+.nodisplay {
+  display:none;
+  transition: all .5s ease;
+}
+
+.leftbox, .rightbox {
+  position: absolute;
+  width: 50%;
+  transition: 1s all ease;
+}
+
+.leftbox {
+  left: -2%;
+}
+.rightbox {
+  right: -2%;
+}
+
+/* font & button styling */
+h1 {
+  font-family: $sans-serif;
+  text-align: center;
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: $white;
+  opacity: .5;
+  font-size: 1.2em;
+  letter-spacing: 8px;
+}
+
+.title {
+  font-family: $serif;
+  color: $gray;
+  font-size: 1em;
+  line-height: .9em;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 20%;
+}
+.desc {
+  margin-top: -8px;
+}
+.account {
+  margin-top: 45%;
+  font-size: 6px;
+}
+p {
+  font-family: $sans-serif;
+  font-size: .4em;
+  letter-spacing: 2px;
+  color: $gray;
+  text-align: center;
+}
+
+span {
+  color: $pale;
+}
+
+.flower {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 42%;
+  left: 26%;
+  opacity: .7;
+}
+
+.smaller {
+  width: 55px;
+  height: 70px;
+  top: 45%;
+  left: 37%;
+  opacity: .9;
+}
+
+button {
+  padding: 8px;
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 7px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+  &:hover {
+    background: $pale;
+    color: $white;
+    transition: background-color 1s ease-out;
+  }
+}
+
+.button {
+  margin-top: 1%;
+  background: $white;
+  color: darken($pale, 10%);
+  border: solid 1px $pale;
+}
+
+/* form styling */
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 7px;
+}
+.more-padding{
+  padding-top: 35px;
+  input {
+    padding: 8px;
+  }
+  .submit {
+    margin-top: 20px;
+  }
+}
+.submit {
+  margin-top: 15px;
+  padding: 10px;
+  border-color: darken($pale, 2%);
+  &:hover {
+    background: $lavender;
+    border-color: darken($lavender, 2%);
+  }
+}
+
+input {
+  background: $pale;
+  width: 65%;
+  color: $lavender;
+  border: none;
+  border-bottom: 1px solid rgba($white, 0.5);
+  padding: 5px;
+  margin: 7px;
+  &::placeholder {
+    color: rgba($white, 0.5);
+  }
+  &:focus {
+    color: $pink;
+    outline: none;
+    border-bottom: 1.2px solid rgba($pink, 0.7);
+    transition: .8s all ease;
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+label {
+  font-family: $sans-serif;
+  color: darken($pale, 8%);
+  font-size: 0.6em;
+  letter-spacing: 1px;
+}
+
+.checkbox {
+  display: inline;
+  white-space: nowrap;
+  position: relative;
+  left: -37px;
+}
+
+input[type=checkbox] {
+  width: 7px;
+  background: $pink;
+}
+
+.checkbox input[type="checkbox"]:checked + label {
+  color: darken($pale, 16%);
+  transition: .5s all ease;
+}

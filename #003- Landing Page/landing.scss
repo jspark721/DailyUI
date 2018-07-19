@@ -1,0 +1,208 @@
+$coral: #FF7A6C;
+$yellow: #FFDC7B;
+$gray: #84828E;
+$onyx: #373449;
+$rosegold: #CE8C91;
+$fuschia: #A24868;
+$white: #EDEDED;
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:800|Open+Sans');
+
+$big: 'Work Sans', sans-serif;
+$regular: 'Open Sans', sans-serif;
+
+body {
+  background: $white;
+}
+
+#container {
+  height: 600px;
+  width: 900px;
+  margin: auto;
+  position: relative;
+  box-shadow: 4px 10px 20px rgba($onyx, .4)
+}
+
+#background {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  background: $coral;
+  -webkit-clip-path: polygon(52% 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(52% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: -1;
+  transition: all .8s ease;
+}
+
+/* navigation */
+nav {
+  display: block;
+  float: right;
+  margin: 1em;
+  margin-top: 2.4em;
+  font-family: $regular;
+  font-size: 11px;
+}
+
+.navbar a {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $onyx;
+  &:hover {
+    background: $yellow;
+    padding: 10px;
+    border-radius: 25px;
+    transition: all .5s ease;
+  }
+}
+
+.navbar a:last-child {
+  background: $onyx;
+  color: $yellow;
+  padding: 10px;
+  border-radius: 25px;
+  &:hover {
+    color: $onyx;
+    background: $yellow;
+    transition: all .5s ease;
+  }
+}
+
+/* sections */
+
+.section {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 100%;
+  height: 80%;
+}
+
+.button {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+}
+
+.rosegold {
+  background: $rosegold;
+}
+
+.coral {
+  background: $coral;
+  left: 35px;
+}
+
+.fuschia {
+  background: $fuschia;
+  left: 70px;
+}
+
+.black {
+  background: $onyx;
+  left: 105px;
+}
+
+/* text-styling */
+
+h1 {
+  font-family: $big;
+  color: $coral;
+  text-transform: uppercase;
+  font-size: 3.5em;
+  text-shadow: 2px 1px 0px rgba($onyx, .9);
+}
+#title {
+  transition: all 1s ease;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-top: -20px;
+  letter-spacing: 3px;
+  font-family: $regular;
+  color: $onyx;
+}
+
+p {
+  font-family: $regular;
+  font-size: .8em;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 0 45px;
+  text-transform: uppercase;
+  color: $onyx;
+}
+
+#desc {
+  position: absolute;
+  top: 77%;
+}
+
+.look {
+  position: absolute;
+  color: $white;
+  opacity: .4;
+  right: 5px;
+  top: 185px;
+  font-size: 2.3em;
+  white-space: nowrap;
+  transform: rotate(90deg);
+}
+.highlight {
+  background-color: $yellow;
+}
+.margin-top {
+  margin-top: 135px;
+}
+.less-margin {
+  margin-top: -35px;
+}
+
+/* image */
+.alta img {
+  height: 370px;
+  position: absolute;
+  top:50px;
+  right: 140px;
+  z-index: -1;
+}
+
+#alta img {
+  transition: all 1s ease;
+}
+
+/*
+.container {
+  position: relative;
+  margin: auto;
+  background: $yellow;
+  opacity: .8;
+  margin-top: 10%;
+  width: 600px;
+  height: 400px;
+  box-shadow: 2px 15px 30px rgba($onyx, .2);
+}
+
+.inner-triangle {
+  position: absolute;
+  background: white;
+  opacity: .9;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: $bottom-triangle;
+  clip-path: $bottom-triangle;
+}
+*/

@@ -1,0 +1,169 @@
+$snow: #F9F3E4;
+$pink: #F29DAB;
+$rose: #DD899E;
+$white: #FFFFFF;
+$light: #CDD3D5;
+$silver: #95999B;
+$gray: #585A5B;
+
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+$font: 'Questrial', sans-serif;
+
+html {
+  min-height: 100%;
+  display: grid;
+}
+
+body {
+  background:
+    linear-gradient(217deg, rgba($pink, .9), rgba($pink,0) 50%),
+    linear-gradient(107deg, rgba($rose,.9), rgba($rose,0) 70%),
+    linear-gradient(246deg, rgba($pink,.9), rgba($pink,0) 60%);
+  display: grid;
+}
+
+#player {
+  background: $white;
+  position: relative;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba($gray, .4);
+  -webkit-transition: all .5s ease-in-out;
+  transition:all .5s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.album {
+  background: url('https://upload.wikimedia.org/wikipedia/en/6/67/Roses_%28featuring_ROZES%29_%28Official_Single_Cover%29_by_The_Chainsmokers.png');
+  background-repeat: no-repeat;
+  background-size: 300px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.heart {
+  position: absolute;
+  right: 0;
+  color: $light;
+  margin: 10px;
+  transition: all .4s ease;
+}
+
+.clicked {
+  color: $rose;
+  transform: scale(1.2);
+  transition: all .4s ease;
+}
+
+.info {
+  height: 115px;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  background: rgba($white, .8);
+  transform: translateY(35px);
+  transition: all .5s ease-in-out;
+}
+
+.up {
+  transform: translateY(0px);
+}
+
+.progress-bar {
+  height: 5px;
+  width: 73%;
+  margin: 6% auto;
+  background: lighten($light, 5%);
+  border-radius: 10px;
+  font-family: $font;
+}
+
+.fill {
+  background-color: $rose;
+  width: 35%;
+  height: 0.3rem;
+  border-radius: 2px;
+}
+
+.time--current, .time--total {
+  color: $gray;
+  font-size: 10px;
+  position: absolute;
+  margin-top: -2px;
+}
+
+.time--current {
+  left: 15px;
+}
+
+.time--total {
+  right: 15px;
+}
+
+.currently-playing {
+  text-align: center;
+  margin-top: -3px;
+}
+
+.song-name, .artist-name {
+  font-family: $font;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.song-name {
+  font-size: .8em;
+  letter-spacing: 3px;
+  color: $gray;
+}
+
+.artist-name {
+  font-size: .6em;
+  letter-spacing: 1.5px;
+  color: lighten($rose, 10%);
+  margin-top: 5px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  font-size: .8em;
+  justify-content: center;
+  color: $light;
+  .play {
+    margin: 15px 25px;
+    color: darken($light, 10%);
+  }
+  .option {
+    left: 10px;
+    position: absolute;
+    font-size: .8em;
+  }
+  .add {
+    right: 10px;
+    position: absolute;
+    font-size: .8em;
+  }
+  .volume {
+    margin-right: 30px;
+    font-size: .8em;
+  }
+  .shuffle {
+    margin-left: 30px;
+    font-size: .8em;
+  }
+}
+
+.play, .next, .previous, .option, .add, .volume, .shuffle {
+  transition: all .5s ease;
+  &:hover {
+    color: $rose;
+  }
+}

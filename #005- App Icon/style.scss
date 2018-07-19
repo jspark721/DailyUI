@@ -1,0 +1,52 @@
+$yellow: #F2E665;
+$orange: #F17B2C;
+$red: #F04B48;
+$fuschia: #D52B81;
+$purple: #5748DB;
+
+.container {
+  margin: auto;
+  position: relative;
+  top: 10%;
+  width: 500px;
+  height: 500px;
+}
+
+.instagram {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  background: radial-gradient(circle at 25% 109%, $yellow 0%, $yellow 15%, $red 45%, $fuschia 60%, $purple 87%);
+  border-radius: 20%;
+  left: 25%;
+  top: 20%;
+}
+.outline {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  left: 13.5%;
+  top: 13%;
+  border-radius: 20%;
+  border: 18px solid #fff;
+}
+
+.inside {
+  position: absolute;
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+  left: 18%;
+  top: 20%;
+  border: 18px solid #fff;
+}
+
+.circle {
+  background: #fff;
+  width: 12%;
+  height: 12%;
+  position: absolute;
+  right: 12%;
+  top: 11%;
+  border-radius: 50%;
+}

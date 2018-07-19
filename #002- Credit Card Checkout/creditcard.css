@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro");
+body {
+  background: #ACB6E5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ACB6E5, #89E5D4);
+  background: linear-gradient(to right, #ACB6E5, #89E5D4);
+  font-family: "Source Code Pro", monospace;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 10%;
+  width: 420px;
+  height: 350px;
+}
+
+.creditcard {
+  background: #f6f6f6;
+  top: 15%;
+  position: absolute;
+  left: 10%;
+  width: 320px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+/* form style */
+fieldset {
+  top: 7px;
+  border: none;
+  position: relative;
+  padding-left: 25px;
+  padding-top: 10px;
+  clear: both;
+}
+fieldset.fieldset-exp {
+  float: left;
+}
+fieldset.fieldset-exp .exp {
+  float: left;
+  width: 50px;
+}
+fieldset.fieldset-ccv {
+  margin-top: -55px;
+  float: right;
+  width: 86px;
+  left: 27px;
+}
+
+label {
+  font-size: .6em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+}
+
+input {
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-image: linear-gradient(to right, #ACB6E5, #A3F7DB);
+  border-image: linear-gradient(to right, #ACB6E5, #A3F7DB);
+  border-image-slice: 1;
+  outline: 0;
+}
+input.input-card-number {
+  width: 45px;
+  margin-right: 2px;
+}
+input#ccv {
+  width: 30px;
+}
+input#name {
+  width: 90%;
+}
+
+select {
+  height: 25px;
+  background: white;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-image: linear-gradient(to right, #ACB6E5, #A3F7DB);
+  border-image: linear-gradient(to right, #ACB6E5, #A3F7DB);
+  border-image-slice: 1;
+  outline: 0;
+}
+
+button {
+  width: 50%;
+  padding: 17px;
+  background: linear-gradient(to right, #97D2FB, #A3F7DB);
+  border-radius: 3px;
+  border: none;
+  outline: 0;
+  color: #888888;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+button:hover {
+  transform: scale(1.05);
+  transition: all .4s ease;
+  color: #000000;
+}
+
+.checkout-btn {
+  position: absolute;
+  top: 90%;
+  left: 60%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

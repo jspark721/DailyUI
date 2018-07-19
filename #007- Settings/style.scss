@@ -1,0 +1,160 @@
+$logo: #3DBB3D;
+$gray: #777777;
+$black: #070707;
+$green: #7ED386;
+$aqua: #3FB6A8;
+$white: #FFFFFF;
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto');
+
+$hulu: 'Nunito Sans', sans-serif;
+$heading: 'Montserrat', sans-serif;
+$body: 'Roboto', sans-serif;
+
+body {
+  background: linear-gradient(to right, $aqua, $green);
+}
+
+.container {
+  background: $white;
+  width: 540px;
+  height: 420px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba($gray, .5);
+}
+
+.logo {
+  float: right;
+  margin-right: 12px;
+  margin-top: 12px;
+  font-family: $hulu;
+  color: $logo;
+  font-weight: 900;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.CTA {
+  width: 80px;
+  height: 40px;
+  right: -20px;
+  bottom: 0;
+  margin-bottom: 90px;
+  position: absolute;
+  background: $green;
+  font-size: 1em;
+  transform: rotate(-90deg);
+  h1 {
+    color: $white;
+    margin-top: 10px;
+    margin-left: 9px;
+  }
+  &:hover {
+    background: $aqua;
+    transition: all .3s ease;
+  }
+}
+
+.leftbox {
+  float: left;
+  top: -5%;
+  left: 5%;
+  position: absolute;
+  width: 15%;
+  height: 110%;
+  background: $green;
+  box-shadow: 3px 3px 10px rgba($gray, .5);
+}
+
+nav a {
+  list-style: none;
+  padding: 35px;
+  color: $white;
+  font-size: 1.1em;
+  display: block;
+  &:hover {
+    color: $aqua;
+    transition: all .3s ease;
+  }
+  &:first-child {
+    margin-top: 7px;
+  }
+}
+
+.active {
+  color: $aqua;
+}
+
+.rightbox {
+  float: right;
+  width: 60%;
+  height: 100%;
+}
+
+h1 {
+  font-family: $heading;
+  color: $green;
+  font-size: 1em;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  color: $gray;
+  font-family: $body;
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 1px;
+  margin-left: 2px;
+}
+
+p {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, $aqua, rgba($green,.5)) 1 0%;
+  border-top: 0;
+  width: 80%;
+  font-family: $heading;
+  font-size: .7em;
+  padding: 7px 0;
+  color: $black;
+}
+span {
+  font-size: .5em;
+  color: $gray;
+}
+
+.btn {
+  float: right;
+  font-family: $body;
+  text-transform: uppercase;
+  font-size: 10px;
+  border: none;
+  color: $aqua;
+  &:hover {
+    text-decoration: underline;
+    font-weight: 900;
+  }
+}
+
+input {
+  border: 1px solid lighten($gray,40%);
+  font-family: $body;
+  padding: 2px;
+  margin: 0;
+}
+
+.privacy h2{
+  margin-top: 25px;
+}
+
+.settings h2{
+  margin-top: 25px;
+}
+
+.noshow {
+  display:none;
+}

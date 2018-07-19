@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+  background: #313a4c;
+}
+
+.container {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+
+.profile {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  height: 350px;
+  width: 220px;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  position: absolute;
+  left: 21.5%;
+  top: 112%;
+}
+.text h2 {
+  color: #FFE3D8;
+  text-transform: uppercase;
+  font-size: 8px;
+  opacity: .7;
+}
+
+.top {
+  position: absolute;
+  width: 100%;
+  height: 46%;
+  background: #495771;
+  background-image: url("https://preview.ibb.co/jOUoSH/pie.jpg");
+  background-size: 220px auto;
+  background-position: right 0px bottom 0px;
+}
+
+.bottom {
+  position: absolute;
+  width: 100%;
+  height: 54%;
+  top: 46%;
+  background: #FFE3D8;
+}
+
+h1, h2, p {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h1 {
+  color: #495771;
+  margin-top: 13%;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #C98491;
+  font-size: 0.5em;
+  text-transform: lowercase;
+  margin-top: -7px;
+}
+
+p {
+  color: #495771;
+  font-size: .4em;
+}
+p .fas {
+  color: #A0B79F;
+  font-size: 7px;
+}
+
+.line {
+  border-bottom: 2px solid #C98491;
+  width: 18%;
+  left: 41%;
+  top: 58%;
+  position: absolute;
+}
+
+button {
+  padding: 15px;
+  font-size: .5em;
+  width: 95px;
+  background: #495771;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #FFE3D8;
+  border: none;
+  margin-top: 40px;
+  opacity: .8;
+  margin-right: 7px;
+}
+button:hover {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+/* hamburger menu */
+.menu {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  opacity: .9;
+  position: absolute;
+  cursor: pointer;
+  right: -1px;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+/*hamburger menu animation*/
+.bar {
+  display: block;
+  height: 3px;
+  width: 20px;
+  background: #FFE3D8;
+  margin: 4px auto;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.click-top {
+  margin-top: 0;
+}
+
+.menu {
+  z-index: 3;
+}
+.menu.open .click-top {
+  background: #495771;
+  transform: translateY(7px) rotateZ(45deg);
+}
+.menu.open .click-middle {
+  opacity: 0;
+}
+.menu.open .click-bottom {
+  background: #495771;
+  transform: translateY(-7px) rotateZ(-45deg);
+}
+
+/*overlay menu*/
+#overlay {
+  position: absolute;
+  background: #E5B879;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s, height .5s;
+  z-index: 2;
+}
+#overlay.view {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  width: 101%;
+  z-index: 2;
+  transition: opacity .5s, visibility .5s, height .5s;
+}
+#overlay:after {
+  transition: .5s;
+}
+
+.nav {
+  margin-top: 60px;
+  margin-left: 15px;
+}
+.nav li {
+  list-style-type: none;
+  margin: 28px auto;
+  font-family: "Raleway", sans-serif;
+  font-size: .7em;
+}
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #495771;
+  padding: 10px;
+  border: solid 1px transparent;
+}
+.nav a:hover {
+  color: #FFE3D8;
+  transition: all .5s ease;
+  border: solid 1px transparent;
+  background: #495771;
+  padding: 10px;
+}
+
+.background {
+  height: 0vh;
+  top: 0;
+  width: 100vw;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  background-position: left 20% top 0px;
+  transition: opacity .5s, visibility .5s, height .5s;
+}
+
+.show {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://preview.ibb.co/jOUoSH/pie.jpg);
+  background-repeat: no-repeat;
+  background-position: left 20% top 0px;
+  visibility: visible;
+  opacity: .2;
+  transition: opacity .5s, visibility .5s, height .5s;
+  position: absolute;
+}

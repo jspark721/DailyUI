@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lora");
+body {
+  background: #CBC0D3;
+}
+
+/* div box styling */
+.container {
+  margin: auto;
+  top: 10%;
+  width: 700px;
+  height: 550px;
+}
+
+.welcome {
+  background: #f6f6f6;
+  width: 430px;
+  height: 250px;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pinkbox {
+  position: absolute;
+  top: -10%;
+  left: 4%;
+  background: #EAC7CC;
+  width: 220px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all .5s ease-in-out;
+  z-index: 2;
+}
+
+.nodisplay {
+  display: none;
+  transition: all .5s ease;
+}
+
+.leftbox, .rightbox {
+  position: absolute;
+  width: 50%;
+  transition: 1s all ease;
+}
+
+.leftbox {
+  left: -2%;
+}
+
+.rightbox {
+  right: -2%;
+}
+
+/* font & button styling */
+h1 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  opacity: .5;
+  font-size: 1.2em;
+  letter-spacing: 8px;
+}
+
+.title {
+  font-family: "Lora", serif;
+  color: #8E9AAF;
+  font-size: 1em;
+  line-height: .9em;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 20%;
+}
+
+.desc {
+  margin-top: -8px;
+}
+
+.account {
+  margin-top: 45%;
+  font-size: 6px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: .4em;
+  letter-spacing: 2px;
+  color: #8E9AAF;
+  text-align: center;
+}
+
+span {
+  color: #EAC7CC;
+}
+
+.flower {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 42%;
+  left: 26%;
+  opacity: .7;
+}
+
+.smaller {
+  width: 55px;
+  height: 70px;
+  top: 45%;
+  left: 37%;
+  opacity: .9;
+}
+
+button {
+  padding: 8px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 7px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+button:hover {
+  background: #EAC7CC;
+  color: #f6f6f6;
+  transition: background-color 1s ease-out;
+}
+
+.button {
+  margin-top: 1%;
+  background: #f6f6f6;
+  color: #dca2aa;
+  border: solid 1px #EAC7CC;
+}
+
+/* form styling */
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 7px;
+}
+
+.more-padding {
+  padding-top: 35px;
+}
+.more-padding input {
+  padding: 8px;
+}
+.more-padding .submit {
+  margin-top: 20px;
+}
+
+.submit {
+  margin-top: 15px;
+  padding: 10px;
+  border-color: #e7c0c5;
+}
+.submit:hover {
+  background: #CBC0D3;
+  border-color: #c6bacf;
+}
+
+input {
+  background: #EAC7CC;
+  width: 65%;
+  color: #CBC0D3;
+  border: none;
+  border-bottom: 1px solid rgba(246, 246, 246, 0.5);
+  padding: 5px;
+  margin: 7px;
+}
+input::placeholder {
+  color: rgba(246, 246, 246, 0.5);
+}
+input:focus {
+  color: #d58f99;
+  outline: none;
+  border-bottom: 1.2px solid rgba(213, 143, 153, 0.7);
+  transition: .8s all ease;
+}
+input:focus::placeholder {
+  opacity: 0;
+}
+
+label {
+  font-family: "Open Sans", sans-serif;
+  color: #dfa9b1;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+}
+
+.checkbox {
+  display: inline;
+  white-space: nowrap;
+  position: relative;
+  left: -37px;
+}
+
+input[type=checkbox] {
+  width: 7px;
+  background: #d58f99;
+}
+
+.checkbox input[type="checkbox"]:checked + label {
+  color: #d48c96;
+  transition: .5s all ease;
+}

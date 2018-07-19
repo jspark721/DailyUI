@@ -1,0 +1,141 @@
+$primary: #2A4870;
+$secondary: #1E73B5;
+$light: #33A8CC;
+$highlight: #9ECE92;
+$white: #D0D8DB;
+$dark: #6D7172;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+$font: 'Open Sans', sans-serif;
+
+
+html {
+  min-height: 100%;
+  display: grid;
+}
+
+body {
+  display: grid;
+  background: $white;
+}
+
+.box {
+  margin: auto;
+  width: 100px;
+  height: 50px;
+}
+
+.share {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  outline: none;
+  border: 0;
+  background: $primary;
+  overflow: hidden;
+  box-shadow: 3px 5px 10px rgba($primary, .5)
+}
+
+.line, .line2, .line3 {
+  width: 13px;
+  height: 60px;
+  position: absolute;
+  transform: rotate(15deg);
+}
+
+.line {
+  right: 22px;
+  top: -5px;
+  background: $highlight;
+}
+
+.line2 {
+  right: 10px;
+  background: $light;
+}
+
+.line3 {
+  right: -3px;
+  background: $secondary;
+}
+
+.icon {
+  user-select: none;
+  position: absolute;
+  color: $white;
+  left: 15px;
+  top: 6px;
+  h1 {
+    font-family: $font;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: .9em;
+  }
+  .btn {
+    position: absolute;
+    right: -27px;
+    background: rgba($white, .9);
+    color: $primary;
+    top: 7px;
+    padding: 3px 7px;
+    border-radius: 50%;
+  }
+}
+
+.active {
+  z-index: -2;
+  margin-top: -10px;
+  position: absolute;
+  opacity: 0;
+  transition: all 1s ease;
+  li {
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    color: $white;
+    border-radius: 50%;
+    background: $primary;
+    position: absolute;
+  }
+  i {
+    margin: 10px 10px 8px 9px;
+  }
+}
+
+.open {
+  position: absolute;
+  margin-left: 140px;
+  margin-top: -10px;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.fab {
+  padding-left: 5px;
+}
+
+.one {
+  left: 0;
+}
+
+.two {
+  left: 50px;
+}
+
+.three {
+  left: 100px;
+}
+
+.four {
+  left: 150px;
+}
+
+.five {
+  left: 200px;
+}
+
+#hide {
+  visibility: hidden;
+}
