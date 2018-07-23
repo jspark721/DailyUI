@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+$font: 'Lato', sans-serif;
+
+$primary: #EA0B8C;
+$secondary: #352384;
+$white: #f9f9fa;
+$black: #11111f;
+$gray: #C8C8C8;
+
+html {
+  display: grid;
+  min-height: 100%;
+  font-family: $font;
+}
+
+body {
+  display: grid;
+  background: $white;
+}
+
+h1 {
+  font-weight: 200;
+  color: $primary;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 1em;
+  margin-top: -1em;
+}
+
+h3{
+  font-weight: 300;
+  font-size: 1em;
+}
+
+p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+  color: $secondary;
+  margin-top: -0.5em;
+}
+
+span {
+  font-size: 0.6em;
+  margin-left: 1em;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 550px;
+  height: 950px;
+  border: 1px solid $primary;
+}
+
+#logo {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  right: 1em;
+  margin: 1em;
+}
+
+.fa-lyft {
+  color: $primary;
+  font-size: 3em;
+}
+
+.main {
+  margin: 4em 3em;
+}
+
+.location {
+  border: 1px solid transparent;
+  width: 100%;
+  height: 30%;
+  margin-top: -1.5em;
+  padding-bottom: 2.2em;
+  p {
+    margin-top: -.8em;
+  }
+  img {
+    position: absolute;
+    left: 41%;
+    height: 280px;
+    margin-top: 18px;
+  }
+}
+
+.location__pickup {
+  margin: 3em 4.5em;
+}
+
+.location__dropoff {
+  margin: 107px 4.5em;
+  p {
+    color: $primary;
+  }
+}
+
+.dot {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 243px;
+  left: 3em;
+  .inner {
+    background: $white;
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    border-radius: 50%;
+    left: 27.5%;
+    top: 27.5%;
+  }
+}
+
+.pickup {
+  background: $secondary;
+}
+
+.dropoff {
+  background: $primary;
+  top: 400px;
+}
+
+.location__line {
+  background: linear-gradient($secondary, $primary);
+  width: 2px;
+  height: 170px;
+  position: absolute;
+  left: 54px;
+  margin-top: 55px;
+}
+.receipt__title {
+  margin: 0 3em -2.5em 3em;
+}
+
+.receipt {
+  margin: 3em;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.receipt__grid1 {
+  margin-top: 1.5em;
+  p {
+    color: $black;
+  }
+}
+
+.receipt__grid2{
+  margin-top: 1.5em;
+  p {
+    text-align: right;
+  }
+}
+
+.receipt__line {
+  position: absolute;
+  left: 7.5%;
+  top: 65%;
+  width: 85%;
+  height: 1px;
+  background: $primary;
+}
+
+.total {
+  margin-top: 2.5em;
+}
+
+.rate {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  .fa-star {
+    padding: 5px 8px;
+    color: $primary;
+  }
+}
+
+.lyft__footer {
+  background: $primary;
+  padding-top: 10px;
+  width: 100%;
+  height: 12%;
+  position: absolute;
+  bottom: 0;
+  p {
+    color: $white;
+    margin: 2.5em 3.2em;
+  }
+  .lyft__social {
+    position: absolute;
+    width: 50%;
+    height: 50px;
+    text-align: right;
+    top: 0;
+    right: 0;
+    margin-top: 4em;
+    margin-right: 2.5em;
+    .fab {
+      padding: 10px;
+      color: $white;
+    }
+  }
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 0.7em;
+  p {
+    letter-spacing: 3px;
+    color: $secondary;
+  }
+  a {
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+      color: #7d7d7d;
+    }
+  }
+}
