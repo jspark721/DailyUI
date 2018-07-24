@@ -16,7 +16,13 @@ html {
 
 body {
   display: grid;
-  background: $white;
+  background: linear-gradient(
+    to top,
+    $primary 0%,
+    $primary 50%,
+    $secondary 50%,
+    $secondary 100%
+  );
 }
 
 h1 {
@@ -54,9 +60,11 @@ span {
   position: relative;
   margin: auto;
   overflow: hidden;
-  width: 550px;
-  height: 950px;
-  border: 1px solid $primary;
+  background: $white;
+  width: 500px;
+  height: 700px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba($black, 0.3);
 }
 
 #logo {
@@ -73,7 +81,7 @@ span {
 }
 
 .main {
-  margin: 4em 3em;
+  margin: 3.5em 3em 1em 3em;
 }
 
 .location {
@@ -81,24 +89,25 @@ span {
   width: 100%;
   height: 30%;
   margin-top: -1.5em;
-  padding-bottom: 2.2em;
+  padding-bottom: 1.7em;
   p {
     margin-top: -.8em;
   }
   img {
     position: absolute;
-    left: 41%;
-    height: 280px;
-    margin-top: 18px;
+    left: 50%;
+    height: 190px;
+    margin-top: 38px;
   }
 }
 
 .location__pickup {
-  margin: 3em 4.5em;
+  margin: 2.7em 4.5em;
 }
 
 .location__dropoff {
-  margin: 107px 4.5em;
+  margin: 0 4.5em;
+  padding-top: 1px;
   p {
     color: $primary;
   }
@@ -109,7 +118,7 @@ span {
   width: 14px;
   height: 14px;
   position: absolute;
-  top: 243px;
+  top: 180px;
   left: 3em;
   .inner {
     background: $white;
@@ -117,8 +126,9 @@ span {
     width: 45%;
     height: 45%;
     border-radius: 50%;
-    left: 27.5%;
-    top: 27.5%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
 }
 
@@ -128,37 +138,37 @@ span {
 
 .dropoff {
   background: $primary;
-  top: 400px;
+  top: 293px;
 }
 
 .location__line {
   background: linear-gradient($secondary, $primary);
   width: 2px;
-  height: 170px;
+  height: 105px;
   position: absolute;
   left: 54px;
   margin-top: 55px;
 }
 .receipt__title {
-  margin: 0 3em -2.5em 3em;
+  margin: 0.5em 3em -2.5em 3em;
 }
 
 .receipt {
-  margin: 3em;
+  margin: 3em 4.5em 0 3.5em;
   height: 150px;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
 .receipt__grid1 {
-  margin-top: 1.5em;
+  margin-top: 1.1em;
   p {
     color: $black;
   }
 }
 
 .receipt__grid2{
-  margin-top: 1.5em;
+  margin-top: 1.1em;
   p {
     text-align: right;
   }
@@ -166,20 +176,20 @@ span {
 
 .receipt__line {
   position: absolute;
-  left: 7.5%;
-  top: 65%;
-  width: 85%;
+  left: 11%;
+  top: 68.5%;
+  width: 75%;
   height: 1px;
   background: $primary;
 }
 
 .total {
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 
 .rate {
   width: 100%;
-  height: 30px;
+  margin-top: -1.3em;
   text-align: center;
   .fa-star {
     padding: 5px 8px;
@@ -188,8 +198,8 @@ span {
 }
 
 .lyft__footer {
-  background: $primary;
-  padding-top: 10px;
+  background: $secondary;
+  padding-bottom: 25px;
   width: 100%;
   height: 12%;
   position: absolute;
@@ -205,8 +215,8 @@ span {
     text-align: right;
     top: 0;
     right: 0;
-    margin-top: 4em;
-    margin-right: 2.5em;
+    margin-top: 3em;
+    margin-right: 3.5em;
     .fab {
       padding: 10px;
       color: $white;
@@ -227,7 +237,7 @@ footer {
     color: $secondary;
   }
   a {
-    color: $primary;
+    color: $white;
     text-decoration: none;
     &:hover {
       color: #7d7d7d;
