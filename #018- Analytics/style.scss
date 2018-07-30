@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+$font: 'Source Sans Pro', sans-serif;
+
+$light: #DFE3EA;
+$white: #FFFFFF;
+$yellow: #F8DC84;
+$green: #AAD3BA;
+$blue: #7EC3F0;
+$orange: #FDA276;
+$dark: #5E6063;
+
+html {
+  display: grid;
+  min-height: 100%;
+  font-family: $font;
+}
+
+body {
+  display: grid;
+  background: linear-gradient(to top right, rgba($blue, 0.5), rgba($yellow, 0.5), rgba($orange, 0.5));
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.5s ease;
+  padding: 5px;
+  color: $green;
+  &:hover {
+    color: $white;
+    background: $green;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+  }
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  background: $white;
+  width: 650px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba($dark, 0.5);
+}
+
+.username {
+  position: absolute;
+  right: 0;
+  margin: 1.2em;
+}
+
+
+.interactions {
+  border: 1px solid $dark;
+  position: absolute;
+  width: 65%;
+}
+
+.discovery {
+  position: absolute;
+  width: 35%;
+  right: 0;
+  border: 1px solid $blue;
+}
