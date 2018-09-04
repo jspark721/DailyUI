@@ -1,0 +1,144 @@
+$primary: #002244;
+$highlight: #7CD339;
+$gray: #A5ACAF;
+$black: #393E41;
+$secondary: #2A5782;
+$white: #ffffff;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+$font: 'Lato', sans-serif;
+
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  overflow: hidden;
+  font-family: $font;
+  text-transform: uppercase;
+  text-align: center;
+  background: $primary;
+}
+
+#container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 300px;
+  height: 470px;
+  background: rgba($white, 0.7);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 0.9em;
+  font-weight: 100;
+  letter-spacing: 3px;
+  padding-top: 5px;
+  color: $primary;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.player {
+  background: $secondary;
+  width: 100%;
+  height: 15px;
+  padding: 5px;
+  border-bottom: 1px solid $primary;
+  color: $white;
+  text-align: left;
+  transition: all .3s ease;
+  &:hover {
+    background: $gray;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+}
+
+.rank {
+  display: inline-block;
+  font-size: 0.8em;
+  position: absolute;
+}
+
+.name {
+  margin-left: 15px;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+}
+
+.pos {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  font-size: .8em;
+}
+
+.wr {
+  background: darken($secondary, 15%);
+}
+//active player
+.active {
+  height: 277px;
+  background: linear-gradient($primary, $secondary);
+  .rank {
+    opacity: .4;
+    position: absolute;
+    font-size: 4em;
+  }
+  .name {
+    font-size: 1.5em;
+    padding-top: 2em;
+  }
+  .desc {
+    font-size: 0.7em;
+    color: $highlight;
+    margin-left: 25px;
+    letter-spacing: 2px;
+    margin-top: 77px;
+  }
+}
+
+.background {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  h2 {
+    opacity: .1;
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: $white;
+    text-align: right;
+  }
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: $font;
+  p {
+    color: $white;
+    letter-spacing: 2px;
+  }
+  a {
+    color: $highlight;
+    text-decoration: none;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
